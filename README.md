@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# E-Commerce App
 
-## Available Scripts
+A modern, e-commerce web application built with React. This project demonstrates a simple online store with product listings, cart functionality, and a clean UI.
 
-In the project directory, you can run:
+## Showcase
 
-### `npm start`
+Below are some screenshots and highlights of the app in action. This section demonstrates the user experience, design, and main features of the e-commerce app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- Add your screenshots below. Example: -->
+![Home Page](screenshots/homepage.png)
+![Product Listing](screenshots/products.png)
+![Cart View](screenshots/cart.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### What you'll see:
+- A visually appealing homepage with featured products
+- Interactive product catalog with add-to-cart functionality
+- A responsive cart summary and checkout flow
+- Smooth navigation and transitions
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Product catalog with images and details
+- Add/remove items to cart
+- View cart summary
+- Responsive design
+- Simple navigation menu
+- Image slider for featured products
 
-### `npm run build`
+## Technologies Used
+- React
+- CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v14)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
+1. Clone the repository:
+	```sh
+	git clone https://github.com/hrushikesh1999/e-commerce-app.git
+	cd e-commerce-app
+	```
+2. Install dependencies:
+	```sh
+	npm install
+	```
 
-### `npm run eject`
+3. Run:
+	```sh
+	npm start
+	```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running Locally
+To start the development server:
+```sh
+npm start
+```
+The app will be available at `http://localhost:3000`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
+```
+public/           # Static files and assets
+src/              # Source code
+  components/     # Reusable UI components
+	 cart/         # Cart-related components
+	 products/     # Product-related components
+	 slide_info/   # Image slider components
+Dockerfile        # Docker configuration
+package.json      # Project metadata and scripts
+```
+## Running Locally with Docker
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Build the image:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+docker build -t e-commerce-app .
+```
+Run the container (for local development):
+```bash
+docker run -it -p 3000:3000 -v %cd%:/app -v /app/node_modules e-commerce-app
+```
 
-## Learn More
+## License
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+- Hrushikesh ([@hrushikesh1999](https://github.com/hrushikesh1999))
